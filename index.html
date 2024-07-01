@@ -1,8 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Power BI Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Power BI Report</title>
+    <style>
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #f0f0f0; /* Background color */
+        }
+
+        .embed-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
 </head>
 <body>
-<iframe title="Google price pick up" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiZWZiNzg0ODAtZTg5Yi00ZTY4LTlmNWQtYjAwOWM0YWI3YjZiIiwidCI6IjQ0ODdiNTJmLWYxMTgtNDgzMC1iNDlkLTNjMjk4Y2I3MTA3NSJ9&pageName=e0bb1c160d1089caf41f" frameborder="0" allowFullScreen="true"></iframe></body>
+    <div class="embed-container">
+        <iframe title="Google price pick up" src="https://app.powerbi.com/view?r=eyJrIjoiZWZiNzg0ODAtZTg5Yi00ZTY4LTlmNWQtYjAwOWM0YWI3YjZiIiwidCI6IjQ0ODdiNTJmLWYxMTgtNDgzMC1iNDlkLTNjMjk4Y2I3MTA3NSJ9&pageName=e0bb1c160d1089caf41f" allowfullscreen="true"></iframe>
+    </div>
+</body>
 </html>
